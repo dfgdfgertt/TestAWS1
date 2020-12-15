@@ -11,13 +11,13 @@ var params = {
 };
 
 // Call EC2 to retrieve policy for selected bucket
-// ec2.describeInstances(params, function(err, data) {
-//   if (err) {
-//     console.log("Error", err.stack);
-//   } else {
-//     console.log("Success", JSON.stringify(data));
-//   }
-// });
+ec2.describeInstances(params, function(err, data) {
+  if (err) {
+    console.log("Error", err.stack);
+  } else {
+    console.log("Success", JSON.stringify(data));
+  }
+});
 
 console.log("running");
 
